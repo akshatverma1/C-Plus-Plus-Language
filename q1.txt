@@ -1,0 +1,13 @@
+//Write a program to calculate perimeter of rectangle.Take sides, a & b, from the user
+#include<iostream>
+using namespace std;
+int main(){
+int a,b,p;
+cout<<"Enter the length of rectangular";
+cin>>a;
+cout<<"Enter the breath of rectangular";
+cin>>b;
+p = 2(a*b);
+cout<<"The permiter of the rectangular"<<p; 
+return 0;
+}
