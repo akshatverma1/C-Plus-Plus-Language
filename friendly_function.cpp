@@ -14,7 +14,7 @@ class akshat{
             cout<<count<<" "<<"This is a Value of the a = "<<a<<" & b = "<<b<<endl;
         }
         friend akshat arr(akshat e,akshat u);        
-};
+};  
         int akshat :: count;
         akshat arr(akshat e,akshat u){
             akshat y3;            
