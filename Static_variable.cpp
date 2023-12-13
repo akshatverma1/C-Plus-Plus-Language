@@ -18,20 +18,7 @@ class tcs{
 };
 
 int main(){
-	]
-	= ][
-	}
-	gXQXD ;/
 	
-	}}
-	}/{ ;'
-	}
-	
-	}
-	
-	
-	{
-	{}';/.P'}]
 	tcs akshat,lakshya,chintu;
     akshat.setdata();
     akshat.getdata();

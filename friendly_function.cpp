@@ -21,7 +21,7 @@ class akshat{
             int w = e.a + u.a;
             int d = e.b + u.b;
             y3.setdata(w,d);
-            return y3;
+            return (y3);
         } 
 int main(){
     akshat h1,h2,h4;
