@@ -16,4 +16,4 @@ int main(){
     akshat t;
     t.setdata();    
     return 0;
-}
+} 

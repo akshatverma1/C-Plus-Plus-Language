@@ -1,31 +1,45 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class bank{
-    private :  
-        char name[100];
-        int accno;
-        char acctype;
-        float balance;
-    public :
-        bank(int x){
-            accno = x;
-            cout<<"int";
-        }
-        bank(char w){
-            acctype = w;
-            cout<<"char";
-        }
-        bank(int q,char o,float e){
-            balance = e;
-            cout<<"float";
-        }
+class akshat
+{
+private:
+    int amount;
+    int year, time;
+    float e;
+
+public:
+    akshat() {}
+    akshat(int a1, int a2, float a3);
+    akshat(int a1, int a2, int w1);
 };
-int main(){
-    int u;
-    char j;
-    float i;
-    cout<<"Enter the any value like int,float & char"<<endl;
-    cin>>u>>j>>i;
-    bank a(u,j,i);
+akshat ::akshat(int a1, int a2, float a3)
+{
+
+    amount = a1;
+    year = a2;
+    e = a3;
+    cout << amount << "," << year << "," << e << endl;
+    cout << "first constructor" << endl;
+}
+akshat ::akshat(int a1, int a2, int w1)
+{
+    amount = a1;
+    year = a2;
+    time = w1;
+    cout << amount << "," << year << "," <<time<< endl;
+    cout << "second constructor";
+}
+int main()
+{
+    akshat c1,c2;
+    cout << "Enter the value of a1,a2 & a3" << endl;
+    int a1, a2,w1;
+    float a3;
+    cout << "Enter the value of a1,a2 & a3" << endl;
+    cin >> a1 >> a2 >> a3;
+    c1 = akshat(a1, a2, a3);
+    cout << "Enter the value of a1,a2 & w1" << endl;
+    cin >> a1 >> a2 >> w1;
+    c2 = akshat(a1,a2,w1);
     return 0;
 }
