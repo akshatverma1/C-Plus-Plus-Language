@@ -32,7 +32,7 @@ akshat ::akshat(int a1, int a2, int w1)
 int main()
 {
     akshat c1,c2;
-    cout << "Enter the value of a1,a2 & a3" << endl;
+    //cout << "Enter the value of a1,a2 & a3" << endl;
     int a1, a2,w1;
     float a3;
     cout << "Enter the value of a1,a2 & a3" << endl;

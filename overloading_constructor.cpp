@@ -19,9 +19,9 @@ akshat :: akshat(int x,int y){
     b=y;
 }
 int main(){
-    akshat t(3,4);
+    //akshat t(3,4);
     //akshat t;
-    t.print();
+    //t.print();
     akshat u;
     u.print();
     //t.print();
