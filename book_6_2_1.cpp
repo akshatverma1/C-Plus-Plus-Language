@@ -3,18 +3,17 @@
 using namespace std;
 class String
 {
-char d[100];
+char d;
 public:
     String()
     {
         cout << "Default Constructor invoked" << endl;
     }
-    String(char x[100])
+    String(char x)
     {
         cout <<"Object with String Constant"<< endl;
-        d[100] = x[100];
-        //gets(d);
-        puts(d);
+        d = x;
+        cout<<d<<endl;
     }
     String(int s,int u){
         cout<<"Two String add constructor called"<<endl;
@@ -23,8 +22,7 @@ public:
 };
 int main()
 {
-    String s;
-    String e("akshat");
+    String e('a');
     String r(1,2);
     return 0;
 }
