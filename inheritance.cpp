@@ -17,6 +17,9 @@ class student{
         void show(){
             cout<<name<<" d = "<<d<<endl;
         }
+        student(int d,int c){
+            cout<<"paramized constructor"<<endl<<name<<endl;
+        }
 };
 class akshat : public student{
     private :
@@ -29,7 +32,7 @@ class akshat : public student{
         }
 };
 int main(){
-    student w,k(3);
+    student w,k(3),h(3,4);
     akshat r,e(8);
     r.show();    
     return 0;
