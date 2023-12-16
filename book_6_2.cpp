@@ -23,7 +23,6 @@ public:
 };
 int main()
 {
-    String s;
     String e("akshat");
     String r(1,2);
     return 0;

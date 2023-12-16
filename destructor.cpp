@@ -13,8 +13,10 @@ class electron{
             a--;
             }
 };
-int main(){
-    electron a;{
+int main()
+{
+    electron a;
+    {
         cout <<"First Object"<<endl;
         electron s,r;
         cout <<"Two Object call"<<endl;
