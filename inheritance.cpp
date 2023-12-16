@@ -2,22 +2,23 @@
 using namespace std;
 class student{
     private:
-    int name;
+    int name=1;
     public :
         int d = 87;
         student(){
-            cout<<"Defalt constructor call"<<endl;
+            //cout<<"Defalt constructor call"<<endl;
         }
         student(int y){
             name = y;
-            cout<<name<<endl;
+            cout<<"Name = "<<name<<endl;
             cout<<"d = "<<d<<endl;
+            //cout<<name<<" d = "<<d<<endl;
         }
         void show(){
             cout<<name<<" d = "<<d<<endl;
         }
 };
-class akshat : student{
+class akshat : public student{
     private :
         int o;
     public :
@@ -30,6 +31,6 @@ class akshat : student{
 int main(){
     student w,k(3);
     akshat r,e(8);
-    w.show();    
+    r.show();    
     return 0;
 }
