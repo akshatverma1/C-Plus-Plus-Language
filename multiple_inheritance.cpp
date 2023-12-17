@@ -18,13 +18,13 @@ class base1{
         cout<<"getdata Invoked"<<endl;
     }
 };
-class derived : public base{
+class derived : public base, public base1 {
     private : 
     int h = 7;
     public :
     int f = 4;
     void detdata(){
-        cout<<"getdata Invoked "<<b<<endl;
+        cout<<"getdata Invoked "<<b<<" "<<p<<endl;
     }
 };
 int main(){
