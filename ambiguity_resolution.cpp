@@ -16,6 +16,7 @@ class derived : public base1 ,public base2{
     public :
     void show(){
         base1::show();
+        cout<<"override called"<<endl;
     }
 };
 int main(){
