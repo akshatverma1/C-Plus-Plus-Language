@@ -12,7 +12,7 @@ class base{
             cout<<"Setdata invoked"<<endl;
         }
 };
-class derived1 : public base{
+class derived1{
     public :
         derived1(){
             cout<<"Derived1 Class Constructor invoked"<<endl;
@@ -24,18 +24,22 @@ class derived1 : public base{
             cout<<"Detdata invoked"<<endl;
         }
 };
-class derived2 : public derived1{
+class derived2 : public base,public derived1{
     public :
-        derived2(){}
-        derived2(int e){
+        derived2(){
             cout<<"Derived2 Class Constructor invoked"<<endl;
         }
+        derived2(int e){
+            cout<<"Derived2 Class Pramized Constructor invoked"<<endl;
+        }
+        derived2(int a,int b,int c,int d): base(a),derived1(b){
+                cout<<"multi constructopr invoked"<<endl;
+            }
         void f(){
-            cout<<"f"<<endl;
+            
         }
 };
 int main(){
-    derived2 s,d(2);
-    //base d,c(2);
+    derived2 s(2,3,4,5);
     return 0;
 }
