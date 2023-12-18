@@ -5,6 +5,7 @@ class base{
         base(){
             cout<<"Base Class Constructor invoked"<<endl;
         }
+        
         base(int y){
             cout<<"Base Class Paramized Constructor invoked"<<endl;
         }
@@ -26,6 +27,7 @@ class derived1{
 };
 class derived2 : public base,public derived1{
     public :
+    int a;
         derived2(){
             cout<<"Derived2 Class Constructor invoked"<<endl;
         }
@@ -33,7 +35,7 @@ class derived2 : public base,public derived1{
             cout<<"Derived2 Class Pramized Constructor invoked"<<endl;
         }
         derived2(int a,int b,int c,int d): base(a),derived1(b){
-                cout<<"multi constructopr invoked"<<endl;
+                cout<<"multi constructopr invoked "<<a<<endl;
             }
         void f(){
             
