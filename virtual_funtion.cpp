@@ -3,7 +3,7 @@ using namespace std;
 class base{
     public :
         int a;
-        void show(){
+        virtual void show(){
             cout<<"Show Invoked"<<endl;
 }
 };
@@ -15,17 +15,19 @@ class dervied : public base{
             cout<<"Dervied Show Invoked"<<endl;
             }
 };
+class derived1 : public base{
+    public :
+        int b;
+        void show/*showw*/(){
+            cout<<"Dervied1 Show Invoked"<<endl;
+            }
+};
 
 int main(){
-    base b;
+    base *bptr;
     dervied d;
-    base *bptr = &d;//ligal
-    dervied *dptr = &d;
-    //bptr->showw();//illgal 
-    //bptr->b=44;//illegal
-    dptr->show();
-    dptr->a=7687;
-    dptr->b=786;
-    //dptr->showw();
+    derived1 s;
+    bptr = &d;
+    bptr->show();
     return 0;
 }
