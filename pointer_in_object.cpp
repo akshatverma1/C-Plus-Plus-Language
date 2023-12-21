@@ -13,7 +13,7 @@ class akshat{
 };
 int akshat :: count;
 int main(){
-    akshat p[4];
+    //akshat p[4];
     akshat *ptr[4]; //= &p[4];
     /*(*ptr[0]).car();
     (*ptr[1]).car();
