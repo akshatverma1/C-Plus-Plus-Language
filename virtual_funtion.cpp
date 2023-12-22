@@ -7,7 +7,6 @@ class base{
             cout<<"Show Invoked"<<endl;
 }
 };
-
 class dervied : public base{
     public :
         int b;

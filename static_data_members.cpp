@@ -2,8 +2,7 @@
 using namespace std;
 class users{
     private :
-    static 
-    int count;
+    static int count;
     char name;
     int roll;
     public :
